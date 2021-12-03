@@ -249,9 +249,9 @@ define([
         var sms = new SimpleMarkerSymbol(SimpleMarkerSymbol.STYLE_CIRCLE, 24, sls,
           new Color.fromString(this.parent.config.color));
         var fnt = new Font();
-        fnt.family = "Arial";
-        fnt.size = "12px";
-        var symText = new TextSymbol(num, fnt, "#ffffff");
+        fnt.setFamily("Arial");
+        fnt.setSize("12px");
+        var symText = new TextSymbol(num + '', fnt, new Color.fromString("#ffffff"));
         symText.setOffset(0, -4);
         this.graphicsLayer.add(new Graphic(loc, sms, attr));
         this.graphicsLayer.add(new Graphic(loc, symText, attr));

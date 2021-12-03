@@ -103,3 +103,7 @@
 .type .dijitSelectLabel {
   max-width:180px;
 }
+
+.add-table .simple-table-cell {
+  padding: 0;
+}
